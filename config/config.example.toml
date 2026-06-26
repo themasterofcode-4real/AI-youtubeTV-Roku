@@ -1,0 +1,26 @@
+# Example application configuration.
+# Copy to a local, ignored config file when implementation begins.
+
+[app]
+environment = "development"
+timezone = "Etc/UTC"
+
+[server]
+host = "127.0.0.1"
+port = 8000
+
+[database]
+url = "sqlite:///./data/assistant.example.db"
+
+[openai]
+api_key_env = "OPENAI_API_KEY"
+model = "REPLACE_WITH_MODEL_NAME"
+
+[roku]
+discovery_enabled = false
+default_device_ip = "0.0.0.0"
+ecp_port = 8060
+
+[providers.youtube_tv]
+enabled = false
+market = "REPLACE_WITH_MARKET"

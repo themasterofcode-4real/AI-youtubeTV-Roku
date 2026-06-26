@@ -1,0 +1,15 @@
+# Example logging configuration. Values are placeholders for future implementation.
+
+[logging]
+level = "INFO"
+format = "json"
+file_enabled = false
+file_path = "./logs/assistant.log"
+
+[logging.subsystems]
+api = "INFO"
+ai = "INFO"
+planner = "INFO"
+database = "INFO"
+updater = "INFO"
+roku = "INFO"

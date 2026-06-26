@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-youtube-tv-roku"
+version = "0.0.0"
+description = "Private AI TV assistant for Roku and YouTube TV."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "Private" }
+authors = [{ name = "Private Project" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.0",
+    "mypy>=1.10",
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[tool.setuptools.packages.find]
+include = ["backend*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+src = ["backend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.13"
+packages = ["backend"]
+strict = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+python_files = ["test_*.py"]
+addopts = "--strict-markers --strict-config"

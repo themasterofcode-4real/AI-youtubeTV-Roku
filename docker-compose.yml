@@ -1,0 +1,6 @@
+# Placeholder Compose file for future services.
+# No production service is implemented in Phase 2.
+services:
+  skeleton:
+    build: .
+    command: python -c "print('AI TV Assistant skeleton: no runnable service in Phase 2')"

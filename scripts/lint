@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Not implemented: this developer script is a Phase 2 placeholder."
