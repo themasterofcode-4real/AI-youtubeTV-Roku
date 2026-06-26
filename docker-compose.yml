@@ -3,4 +3,7 @@
 services:
   skeleton:
     build: .
-    command: python -c "print('AI TV Assistant skeleton: no runnable service in Phase 2')"
+    command:
+      - python
+      - -c
+      - print('AI TV Assistant skeleton; no runnable service in Phase 2')
